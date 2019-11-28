@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+    <!-- Carrier Job Related Changes -->
+    <replace sel="//jobs/job[@id='argon_fighter_escort_s_carrier']/quota/@wing">20</replace>
+    <replace sel="//jobs/job[@id='paranid_fighter_escort_s_carrier']/quota/@wing">20</replace>
+    <replace sel="//jobs/job[@id='teladi_fighter_escort_s_carrier']/quota/@wing">20</replace>
+    <add sel="//jobs">
+        <job id="argon_frigate_escort_m_carrier" name="{20204,2901}" startactive="false">
+            <orders>
+                <order>
+                    <param name="formation" value="formationshape.pointguard"/>
+                </order>
+            </orders>
+            <category faction="argon" tags="[military]" size="ship_m"/>
+            <quota wing="5"/>
+            <location class="galaxy" macro="xu_ep2_universe_macro"/>
+            <environment buildatshipyard="true"/>
+            <modifiers subordinate="true"/>
+            <ship>
+                <select faction="argon" tags="[military, medium]" size="ship_m"/>
+                <loadout>
+                    <level min="0" max="0.7"/>
+                </loadout>
+                <owner exact="argon" overridenpc="true"/>
+            </ship>
+        </job>
+        <job id="paranid_frigate_escort_m_carrier" name="{20204,2901}" startactive="false">
+            <orders>
+                <order order="Escort" default="true">
+                    <param name="formation" value="formationshape.pointguard"/>
+                </order>
+            </orders>
+            <category faction="paranid" tags="[military]" size="ship_m"/>
+            <quota wing="5"/>
+            <location class="galaxy" macro="xu_ep2_universe_macro"/>
+            <environment buildatshipyard="true"/>
+            <modifiers subordinate="true"/>
+            <ship>
+                <select faction="paranid" tags="[military, medium]" size="ship_m"/>
+                <loadout>
+                    <level min="0" max="0.7"/>
+                </loadout>
+                <owner exact="paranid" overridenpc="true"/>
+            </ship>
+        </job>
+        <job id="teladi_frigate_escort_m_carrier" name="{20204,2901}" startactive="false">
+            <orders>
+                <order order="Escort" default="true">
+                    <param name="formation" value="formationshape.pointguard"/>
+                </order>
+            </orders>
+            <category faction="teladi" tags="[military]" size="ship_m"/>
+            <quota wing="5" variation="1"/>
+            <location class="galaxy" macro="xu_ep2_universe_macro"/>
+            <environment buildatshipyard="true"/>
+            <modifiers subordinate="true"/>
+            <ship>
+                <select faction="ministry" tags="[military, medium]" size="ship_m"/>
+                <loadout>
+                    <level min="0" max="0.7"/>
+                </loadout>
+                <owner exact="teladi" overridenpc="true"/>
+            </ship>
+        </job>
+    </add>
+    <add sel="//jobs/job[@id='argon_carrier_patrol_xl_center_galaxy']/subordinates">
+        <subordinate job="argon_frigate_escort_m_carrier"/>
+    </add>
+    <add sel="//jobs/job[@id='paranid_carrier_patrol_xl_cluster']/subordinates">
+        <subordinate job="paranid_frigate_escort_m_carrier"/>
+    </add>
+    <add sel="//jobs/job[@id='teladi_carrier_patrol_xl_cluster']/subordinates">
+        <subordinate job="teladi_frigate_escort_m_carrier"/>
+    </add>
+
+    <!-- Non carrier related job changes -->
+    <replace sel="//jobs/job[@id='antigone_frigate_escort_m']/quota/@wing">6</replace>
+    <add sel="//jobs/job[@id='antigone_destroyer_patrol_l_border_sector']/subordinates">
+        <subordinate job="antigone_frigate_escort_m"/>
+    </add>
+    <replace sel="//jobs/job[@id='holyorder_frigate_escort_m']/quota/@wing">6</replace>
+    <replace sel="//jobs/job[@id='ministry_frigate_escort_m']/quota/@wing">6</replace>
+
+    <!-- Xenon Changes -->
+    <replace sel="//jobs/job[@id='xenon_frigate_escort_m']/quota/@wing">4</replace>
+    <replace sel="//jobs/job[@id='xenon_fighter_escort_s_frigate']/quota/@wing">6</replace>
+</diff>
