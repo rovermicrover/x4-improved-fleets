@@ -8,7 +8,7 @@ NPC fleets are very small and do not have enough fighters to cover their L and X
 
 # Links
 
-[Egosoft Forum](https://forum.egosoft.com/viewtopic.php)
+[Egosoft Forum](https://forum.egosoft.com/viewtopic.php?f=192&t=420538)
 
 [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=1925136156)
 
