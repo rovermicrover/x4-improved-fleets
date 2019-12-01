@@ -1,6 +1,6 @@
 # About
 
-NPC fleets are very small and do not have enough figthers to cover their L and XL ships. This mod increases these fleets figther and medium ship head counts to help fix this problem.
+NPC fleets are very small and do not have enough fighters to cover their L and XL ships. This mod increases these fleets fighter and medium ship head counts to help fix this problem.
 
 # What Is Modified?
 
@@ -10,7 +10,7 @@ NPC fleets are very small and do not have enough figthers to cover their L and X
 
 [Egosoft Forum](https://forum.egosoft.com/viewtopic.php)
 
-[Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=)
+[Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=1925136156)
 
 [Github](https://github.com/rovermicrover/x4-improved-fleets)
 
